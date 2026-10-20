@@ -1,32 +1,67 @@
-const navigation = [
-  { id: "catalog", label: "Course Catalog" },
-  { id: "overview", label: "Overview & Instructions" },
-  { id: "about", label: "About" },
-  { id: "blog", label: "Blog" },
-  { id: "files", label: "Project Files" },
+import { useRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { usePlanner } from "../state/PlannerContext";
+
+const primary = [
+  { to: "/", label: "Find Courses", end: true },
+  { to: "/schedule", label: "My Schedule", showCount: true },
+  { to: "/compare", label: "Compare" },
+  { to: "/progress", label: "My Courses" },
 ];
 
-export default function Navbar({ activePage, onNavigate }) {
+const project = [
+  { to: "/overview", label: "Overview & Instructions" },
+  { to: "/about", label: "About" },
+  { to: "/blog", label: "Blog" },
+  { to: "/files", label: "Project Files" },
+];
+
+export default function Navbar() {
+  const { items } = usePlanner();
+  const menu = useRef(null);
+  const { pathname } = useLocation();
+  const inProject = project.some((link) => link.to === pathname);
+
+  const closeMenu = () => menu.current?.removeAttribute("open");
+
   return (
     <header className="site-header">
       <div className="header-content">
-        <div className="brand">
-          <strong>CS Course Catalog</strong>
-          <span>CS 514 · Draft Project</span>
-        </div>
+        <NavLink to="/" className="brand" onClick={closeMenu}>
+          <span className="brand-mark" aria-hidden="true">CS</span>
+          <span>
+            <strong>Course Planner</strong>
+            <span>SDSU Computer Science</span>
+          </span>
+        </NavLink>
 
-        <nav aria-label="Main navigation">
-          {navigation.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              className={activePage === item.id ? "nav-active" : ""}
-              aria-current={activePage === item.id ? "page" : undefined}
-              onClick={() => onNavigate(item.id)}
+        <nav aria-label="Main navigation" className="main-nav">
+          {primary.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              end={link.end}
+              onClick={closeMenu}
             >
-              {item.label}
-            </button>
+              {link.label}
+              {link.showCount && items.length > 0 && (
+                <span className="nav-count" aria-label={`${items.length} courses`}>
+                  {items.length}
+                </span>
+              )}
+            </NavLink>
           ))}
+
+          <details className="nav-menu" ref={menu}>
+            <summary className={inProject ? "active" : ""}>Project</summary>
+            <div className="nav-menu-list">
+              {project.map((link) => (
+                <NavLink key={link.to} to={link.to} onClick={closeMenu}>
+                  {link.label}
+                </NavLink>
+              ))}
+            </div>
+          </details>
         </nav>
       </div>
     </header>

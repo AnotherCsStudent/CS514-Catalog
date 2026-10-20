@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+# Scraper working files; the built dataset lives in Frontend/public/data/.
+data/schedule/*/raw/
+data/schedule/*/courses/
+data/schedule/*/*.log

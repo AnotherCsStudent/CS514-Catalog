@@ -1,0 +1,498 @@
+[
+ {
+  "code": "ACCTG",
+  "name": "Accountancy"
+ },
+ {
+  "code": "ARP",
+  "name": "Administration, Rehabilitation & Post Sec Educ"
+ },
+ {
+  "code": "A E",
+  "name": "Aerospace Engineering"
+ },
+ {
+  "code": "A S",
+  "name": "Aerospace Studies"
+ },
+ {
+  "code": "AFRAS",
+  "name": "Africana Studies"
+ },
+ {
+  "code": "AMIND",
+  "name": "American Indian Studies"
+ },
+ {
+  "code": "ASL",
+  "name": "American Sign Language"
+ },
+ {
+  "code": "ANTH",
+  "name": "Anthropology"
+ },
+ {
+  "code": "ARAB",
+  "name": "Arabic"
+ },
+ {
+  "code": "ART",
+  "name": "Art"
+ },
+ {
+  "code": "CAL",
+  "name": "Arts And Letters"
+ },
+ {
+  "code": "AAS",
+  "name": "Asian American Studies"
+ },
+ {
+  "code": "ASIAN",
+  "name": "Asian Studies"
+ },
+ {
+  "code": "ASTR",
+  "name": "Astronomy"
+ },
+ {
+  "code": "AUD",
+  "name": "Audiology"
+ },
+ {
+  "code": "BDA",
+  "name": "Big Data Analytics"
+ },
+ {
+  "code": "BIOMI",
+  "name": "Bioinformatics And Medical Informatics"
+ },
+ {
+  "code": "BIOL",
+  "name": "Biology"
+ },
+ {
+  "code": "BRAZ",
+  "name": "Brazilian Studies"
+ },
+ {
+  "code": "B A",
+  "name": "Business Administration"
+ },
+ {
+  "code": "CHEM",
+  "name": "Chemistry"
+ },
+ {
+  "code": "CCS",
+  "name": "Chicana And Chicano Studies"
+ },
+ {
+  "code": "CFD",
+  "name": "Child & Family Development"
+ },
+ {
+  "code": "CHIN",
+  "name": "Chinese"
+ },
+ {
+  "code": "C P",
+  "name": "City Planning"
+ },
+ {
+  "code": "CIV E",
+  "name": "Civil Engineering"
+ },
+ {
+  "code": "CLASS",
+  "name": "Classics"
+ },
+ {
+  "code": "COMM",
+  "name": "Communication"
+ },
+ {
+  "code": "CINTS",
+  "name": "Comparative International Studies"
+ },
+ {
+  "code": "COMP",
+  "name": "Computational Science"
+ },
+ {
+  "code": "COMPE",
+  "name": "Computer Engineering"
+ },
+ {
+  "code": "CS",
+  "name": "Computer Science"
+ },
+ {
+  "code": "CON E",
+  "name": "Construction Engineering"
+ },
+ {
+  "code": "CON M",
+  "name": "Construction Management"
+ },
+ {
+  "code": "CSP",
+  "name": "Counseling And School Psychology"
+ },
+ {
+  "code": "CM",
+  "name": "Course Match"
+ },
+ {
+  "code": "CJ",
+  "name": "Criminal Justice"
+ },
+ {
+  "code": "CY",
+  "name": "Cyber Security"
+ },
+ {
+  "code": "DANCE",
+  "name": "Dance"
+ },
+ {
+  "code": "DPT",
+  "name": "Doctor Of Physical Therapy"
+ },
+ {
+  "code": "DLE",
+  "name": "Dual Language And English Learner Education"
+ },
+ {
+  "code": "ECON",
+  "name": "Economics"
+ },
+ {
+  "code": "ED",
+  "name": "Education"
+ },
+ {
+  "code": "EDL",
+  "name": "Educational Leadership"
+ },
+ {
+  "code": "E E",
+  "name": "Electrical Engineering"
+ },
+ {
+  "code": "ENGR",
+  "name": "Engineering"
+ },
+ {
+  "code": "ECL",
+  "name": "English & Comparative Literature"
+ },
+ {
+  "code": "ENV E",
+  "name": "Environmental Engineering"
+ },
+ {
+  "code": "ENV S",
+  "name": "Environmental Sciences"
+ },
+ {
+  "code": "EUROP",
+  "name": "European Studies"
+ },
+ {
+  "code": "ENS",
+  "name": "Exercise And Nutritional Sciences"
+ },
+ {
+  "code": "FILIP",
+  "name": "Filipino (Tagalog)"
+ },
+ {
+  "code": "FIN",
+  "name": "Finance"
+ },
+ {
+  "code": "FN",
+  "name": "Foods & Nutrition"
+ },
+ {
+  "code": "FRENC",
+  "name": "French"
+ },
+ {
+  "code": "GEN S",
+  "name": "General Studies"
+ },
+ {
+  "code": "GEOG",
+  "name": "Geography"
+ },
+ {
+  "code": "GEOL",
+  "name": "Geological Sciences"
+ },
+ {
+  "code": "GERMN",
+  "name": "German"
+ },
+ {
+  "code": "GERO",
+  "name": "Gerontology"
+ },
+ {
+  "code": "HHS",
+  "name": "Health And Human Services"
+ },
+ {
+  "code": "HEBRW",
+  "name": "Hebrew"
+ },
+ {
+  "code": "HIST",
+  "name": "History"
+ },
+ {
+  "code": "H SEC",
+  "name": "Homeland Security"
+ },
+ {
+  "code": "HONOR",
+  "name": "Honors College"
+ },
+ {
+  "code": "HTM",
+  "name": "Hospitality, Tourism And Management"
+ },
+ {
+  "code": "HUM",
+  "name": "Humanities"
+ },
+ {
+  "code": "INT S",
+  "name": "Interdisciplinary Studies"
+ },
+ {
+  "code": "I B",
+  "name": "International Business"
+ },
+ {
+  "code": "ISCOR",
+  "name": "International Security And Conflict Resolution"
+ },
+ {
+  "code": "ITAL",
+  "name": "Italian"
+ },
+ {
+  "code": "JAPAN",
+  "name": "Japanese"
+ },
+ {
+  "code": "JS",
+  "name": "Jewish Studies"
+ },
+ {
+  "code": "JMS",
+  "name": "Journalism & Media Studies"
+ },
+ {
+  "code": "KOR",
+  "name": "Korean"
+ },
+ {
+  "code": "LATAM",
+  "name": "Latin American Studies"
+ },
+ {
+  "code": "LEAD",
+  "name": "Leadership"
+ },
+ {
+  "code": "LDT",
+  "name": "Learning Design And Technology"
+ },
+ {
+  "code": "LGBT",
+  "name": "Lesbian, Gay, Bisexual, And Transgender Studies"
+ },
+ {
+  "code": "MALAS",
+  "name": "Liberal Arts & Sciences"
+ },
+ {
+  "code": "LIB S",
+  "name": "Liberal Studies"
+ },
+ {
+  "code": "LING",
+  "name": "Linguistics"
+ },
+ {
+  "code": "MGT",
+  "name": "Management"
+ },
+ {
+  "code": "MIS",
+  "name": "Management Information Systems"
+ },
+ {
+  "code": "MKTG",
+  "name": "Marketing"
+ },
+ {
+  "code": "M S E",
+  "name": "Math And Science Education"
+ },
+ {
+  "code": "MATH",
+  "name": "Mathematics"
+ },
+ {
+  "code": "MTHED",
+  "name": "Mathematics Education"
+ },
+ {
+  "code": "M E",
+  "name": "Mechanical Engineering"
+ },
+ {
+  "code": "MIL S",
+  "name": "Military Science"
+ },
+ {
+  "code": "M BIO",
+  "name": "Molecular Biology"
+ },
+ {
+  "code": "MUSIC",
+  "name": "Music"
+ },
+ {
+  "code": "N SCI",
+  "name": "Natural Science"
+ },
+ {
+  "code": "NAV S",
+  "name": "Naval Science"
+ },
+ {
+  "code": "NURS",
+  "name": "Nursing"
+ },
+ {
+  "code": "OCEAN",
+  "name": "Oceanography"
+ },
+ {
+  "code": "PERS",
+  "name": "Persian"
+ },
+ {
+  "code": "PHIL",
+  "name": "Philosophy"
+ },
+ {
+  "code": "PHYS",
+  "name": "Physics"
+ },
+ {
+  "code": "POL S",
+  "name": "Political Science"
+ },
+ {
+  "code": "PORT",
+  "name": "Portuguese"
+ },
+ {
+  "code": "PSFA",
+  "name": "Professional Studies And Fine Arts"
+ },
+ {
+  "code": "PSY",
+  "name": "Psychology"
+ },
+ {
+  "code": "P A",
+  "name": "Public Administration"
+ },
+ {
+  "code": "PUB",
+  "name": "Public Affairs"
+ },
+ {
+  "code": "P H",
+  "name": "Public Health"
+ },
+ {
+  "code": "RTM",
+  "name": "Recreation And Tourism Management"
+ },
+ {
+  "code": "R A",
+  "name": "Regulatory Affairs"
+ },
+ {
+  "code": "REL S",
+  "name": "Religious Studies"
+ },
+ {
+  "code": "RWS",
+  "name": "Rhetoric And Writing Studies"
+ },
+ {
+  "code": "RUSSN",
+  "name": "Russian"
+ },
+ {
+  "code": "SCI",
+  "name": "Sciences"
+ },
+ {
+  "code": "SEG",
+  "name": "Social Equity and Governance"
+ },
+ {
+  "code": "SWORK",
+  "name": "Social Work"
+ },
+ {
+  "code": "SOC",
+  "name": "Sociology"
+ },
+ {
+  "code": "SPAN",
+  "name": "Spanish"
+ },
+ {
+  "code": "SPED",
+  "name": "Special Education"
+ },
+ {
+  "code": "SLHS",
+  "name": "Speech, Language, And Hearing Sciences"
+ },
+ {
+  "code": "STAT",
+  "name": "Statistics"
+ },
+ {
+  "code": "SUSTN",
+  "name": "Sustainability"
+ },
+ {
+  "code": "TE",
+  "name": "Teacher Education"
+ },
+ {
+  "code": "TFM",
+  "name": "Television, Film And New Media"
+ },
+ {
+  "code": "THEA",
+  "name": "Theatre Arts"
+ },
+ {
+  "code": "WGSS",
+  "name": "Women's. Gender, and Sexuality Studies"
+ }
+]
