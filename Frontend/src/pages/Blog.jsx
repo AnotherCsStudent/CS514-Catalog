@@ -11,8 +11,15 @@ the page navigation, course search, curriculum filters, and displaying class inf
   Bradley: `The SDSU Catalog site is designed to optimize the speed that the SDSU Catalog information can be gathered. 
 The current SDSU Catalog site is very slow for simple queries, and even slower when looking up complex queries.
 Our site solves this by using modern technology and SQL Databases with quicker queries to make gathering information bearable.`,
-  Ajay: ``,
-  Mateo: ``,
+  Ajay: `The SDSU Course Catalog is a student-built website that makes it easier to explore SDSU’s course offerings.
+It pulls course data from the official university catalog into its own database. Students can then search for
+classes faster and more accurately than on the official site, by course code, title, or topic.`,
+  Mateo: `Our project is a student-built SDSU course catalog platform designed to make finding course information
+faster and easier. The website organizes course descriptions, prerequisites, and major requirements in one
+searchable location. Instead of navigating through the slower official catalog, students can search for classes
+by course code, title, or topic and quickly see which courses they need and what prerequisites are required.
+By storing the catalog information in a SQL database, our platform can process searches more efficiently and
+provide students with a simpler way to plan and understand their degree requirements.`,
 };
 
 export default function Blog() {
