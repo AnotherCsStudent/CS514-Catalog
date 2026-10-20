@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { usePlanner } from "../state/PlannerContext";
 import { resolveItems, summarize } from "../lib/schedule";
-import { formatTime } from "../lib/time";
+import { formatTime, sectionLabel } from "../lib/time";
 import WeekCalendar from "../components/WeekCalendar";
 
 const ROWS = [
@@ -54,6 +54,30 @@ export default function Compare() {
   );
   const resolved = picks.map((schedule) => resolveItems(schedule));
   const summaries = resolved.map(summarize);
+  
+  const leftByCode = new Map(resolved[0].map((item) => [item.code, item]));
+  const rightByCode = new Map(resolved[1].map((item) => [item.code, item]));
+
+  const onlyLeft = resolved[0].filter((item) => !rightByCode.has(item.code));
+  const onlyRight = resolved[1].filter((item) => !leftByCode.has(item.code));
+
+  const sectionDifferences = resolved[0].flatMap((leftItem) => {
+    const rightItem = rightByCode.get(leftItem.code);
+
+    if (!rightItem || leftItem.sectionId === rightItem.sectionId) return [];
+
+    return [
+      {
+        code: leftItem.code,
+        left: leftItem.section
+          ? sectionLabel(leftItem.section)
+          : "No section selected",
+        right: rightItem.section
+          ? sectionLabel(rightItem.section)
+          : "No section selected",
+      },
+    ];
+  });
 
   return (
     <section>
@@ -110,6 +134,46 @@ export default function Compare() {
             </tr>
           </tbody>
         </table>
+      </div>
+      
+      <div className="card">
+        <h2>What’s different</h2>
+
+        <h3>Courses only in {picks[0].name}</h3>
+        {onlyLeft.length ? (
+          <ul>
+            {onlyLeft.map((item) => (
+              <li key={item.code}>{item.code}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted">None</p>
+        )}
+
+        <h3>Courses only in {picks[1].name}</h3>
+        {onlyRight.length ? (
+          <ul>
+            {onlyRight.map((item) => (
+              <li key={item.code}>{item.code}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted">None</p>
+        )}
+
+        <h3>Different sections for shared courses</h3>
+        {sectionDifferences.length ? (
+          <ul>
+            {sectionDifferences.map((difference) => (
+              <li key={difference.code}>
+                <strong>{difference.code}</strong>: {picks[0].name} —{" "}
+                {difference.left}; {picks[1].name} — {difference.right}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted">No section differences</p>
+        )}
       </div>
 
       <div className="compare-calendars">
