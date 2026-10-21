@@ -7,7 +7,11 @@ What makes our approach unique is bringing course information, prerequisites, an
 together in a searchable layout. Students can search for a specific class or filter by curriculum section
 to find the information they need more easily. My role in the project is working on the frontend, including
 the page navigation, course search, curriculum filters, and displaying class information.`,
-  Gian: ``,
+  Gian: `This project is catered to SDSU students with a friendly and easy to use interface that brings curriculum
+requirements and class offerings together in an easy way for students to build their own schedules with ease whilst
+avoiding very common problems like schedule conflicts. Our project is unique because unlike other projects similar
+to ours, ours focuses on the full workload all in one application. It is tailored for students’ programs and offers
+them features such as connecting course requirements, class availability, and exporting the schedule all in one.`,
   Bradley: `The SDSU Catalog site is designed to optimize the speed that the SDSU Catalog information can be gathered. 
 The current SDSU Catalog site is very slow for simple queries, and even slower when looking up complex queries.
 Our site solves this by using modern technology and SQL Databases with quicker queries to make gathering information bearable.`,
